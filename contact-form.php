@@ -11,13 +11,13 @@
 		$email = $_POST['contactemail'];
 		$message = $_POST['contactmessage'];
 		
-		$formcontent=" From: Mim Contact Form $email \n
+		$formcontent=" From: GitHub Contact Form $email \n
 		Name: $name \n
 		Email Address: $email \n
 		Message: $message";
 		
-		$recipient = "yourmail@gamil.com";
-		$subject = "Add Your Subject Here";
+		$recipient = "luckson2@yahoo.com";
+		$subject = "Online Contact Form";
 		$mailheader = "From: $email \r\n";
 		mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
 		
